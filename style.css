@@ -1,0 +1,104 @@
+#welcome_message{
+  position:absolute;
+  top: 30%;
+  left: 27%;
+  animation: message  1s;
+  font-family: 'Dancing Script', cursive;
+  color:white;
+  text-shadow: 0 2px 6px rgb(0 0 0 / 40%);
+}
+body{
+  background-color: darkred;
+}
+#en{
+  width:300px;
+position:absolute;
+opacity: 0%;
+top: 30%;
+left: 15%;
+filter: drop-shadow(0 4px 8px rgb(0 0 0 / 100%));
+animation: fade-out 4s;
+}
+#envelope{
+  width:250px;
+  animation:come 1s;
+  position:absolute;
+top: 35%;
+left: 24%;
+filter: drop-shadow(0 4px 8px rgb(0 0 0 / 100%));
+}
+@keyframes message{
+  0% { top: 10%; left: 27%; transform: rotate(0deg);}
+  25% { top: 15%; left: 27%;transform: rotate(20deg);}
+50% { top: 20%; left: 27%;transform: rotate(-20deg);}
+  100% { top:30%; left: 27%;}
+}
+@keyframes come{
+  0% { top: 100%; left: 0%; transform: rotate(0deg);}
+  25% { top: 90%; left: 10%;transform: rotate(30deg);}
+50% { top: 50%; left: 10%;transform: rotate(-30deg);}
+  100% { top:35%; left: 24%;}
+}
+@keyframes fade-out{
+  from{opacity: 100%;}
+  to{opacity:0%}
+}
+@keyframes getin{
+  from{ left:-1000%}
+  to{ left:10%}
+}
+@keyframes getimg{
+  from{ left:-1000%}
+  to{ left:3%}
+}
+@keyframes fade-in{
+  from{opacity:0%;}
+  to{opacity:100%;}
+}
+#top{
+  color:white;
+  position:absolute;
+  top:30%;
+  left:12%;
+  font-family: 'Georgia', serif;
+  animation:fade-in 9s ;
+}
+#p1{
+  color:white;
+  position:absolute;
+  top:40%;
+  font-family: 'Georgia', serif;
+  animation:fade-in 9s ;
+}
+.images img{
+  width: 90px;
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 8px rgb(0 0 0 / 100%));
+}
+.images{
+  position:absolute;
+  top:65%;
+  left:3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  animation:fade-in 10s;
+}
+#p2{
+  color:white;
+position:absolute;
+top:50%;
+left:3%;
+font-family: 'Georgia', serif;
+animation:fade-in 9s;
+}
+#end{
+  color:white;
+  font-family: 'Georgia', serif;
+  font-size:20px;
+  position:absolute;
+  top:80%;
+  left:70%;
+  animation:fade-in 9s;
+}
